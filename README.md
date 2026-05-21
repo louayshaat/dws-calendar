@@ -99,7 +99,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 **Option A — Cloud Build (recommended, no local Docker needed)**
 
 ```bash
-IMAGE="${REGION}-docker.pkg.dev/${PROJECT_ID}/${REPO_NAME}/${SERVICE_NAME}"
+export IMAGE="${REGION}-docker.pkg.dev/${PROJECT_ID}/${REPO_NAME}/${SERVICE_NAME}"
 
 gcloud builds submit \
   --tag $IMAGE \
