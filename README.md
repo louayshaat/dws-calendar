@@ -90,7 +90,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 
 > **Why `compute.admin`?**  
 > The `advice/calendarMode` endpoint requires `compute.regions.get` and
-> `compute.futureReservations.list` permissions. `roles/compute.admin` covers
+> `compute.futureReservations.list` permissions. `roles/compute.admin` covers both. to be more secure, create a custom role.
 
 ---
 
