@@ -85,7 +85,7 @@ gcloud iam service-accounts create $SA_NAME \
 # (needed for regions list + advice/calendarMode)
 gcloud projects add-iam-policy-binding $PROJECT_ID \
   --member="serviceAccount:${SA_EMAIL}" \
-  --role="roles/compute.viewer"
+  --role="roles/compute.admin"
 ```
 
 > **Why `compute.viewer`?**  
